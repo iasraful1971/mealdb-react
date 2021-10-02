@@ -1,0 +1,12 @@
+.app{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+}
+.app:hover{
+    color: #006EDD;
+}
