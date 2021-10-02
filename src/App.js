@@ -17,7 +17,7 @@ const App = () => {
                     <Route path="/home">
                          <Home></Home>
                     </Route>
-                    <Route path="/our-restaurent">
+                    <Route exact path="/">
                         <Restaurent></Restaurent>
                     </Route>
                     <Route path="/about">
@@ -26,12 +26,13 @@ const App = () => {
                     <Route path="/contact">
                         <Contact></Contact>
                     </Route>
-                    <Route exact path="">
+                    <Route exact path="/our-restaurent">
+                       <Restaurent></Restaurent>
+                    </Route>
+                    <Route exact path="*">
                         <Notfound></Notfound>
                     </Route>
-                    <Route exact path="/">
-                       <Home></Home>
-                    </Route>
+                    
                 </Switch>
             </Router>
        
